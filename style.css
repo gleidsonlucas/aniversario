@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+    color: rgb(255, 5, 5);
+}
+h1{
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 1px 1px 0px black;
+}
+h1::first-letter{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+    color: darkblue;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.473);
+    margin-bottom: 50px;
+}
+#container{
+    display: block;
+    margin: auto;
+    height: 550px;
+    width: 550px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: 1px solid black;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+a{
+    color: white;
+}
+  .feliz-aniversario {
+    animation: piscar 1s ease-in-out infinite;
+  }
+  
+  @keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+.feliz-aniversario {
+  font-size: 50px;
+  text-align: center;
+}
+
+.colorido {
+  animation: mudar-cor 2s linear infinite;
+}
+
+@keyframes mudar-cor {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: yellow; }
+  75% { color: green; }
+  100% { color: red; }
+}
+
+.imagem{
+  background-image: url(imagens/andreza.jpg);
+}
+@media screen and (orientation: portrait){
+  #container{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: scroll;
+}
+p{
+  text-align: center;
+  font-size: 1.7em;
+  color: rgb(7, 7, 43);
+  text-shadow: 1px 1px 0px rgb(255, 42, 42);
+  margin-bottom: 50px;
+}
+}
